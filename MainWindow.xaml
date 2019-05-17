@@ -1,0 +1,30 @@
+﻿<Window x:Class="LibraryLookup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryLookup"
+        mc:Ignorable="d"
+        Title="Library Lookup" Height="650" Width="400" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="5" >
+            <TextBox Name="TxtInput" Margin="5"/>
+            <Button Content="Search ISBN" Margin="5"
+                    Name="BtnSearch" 
+                    Click="BtnSearch_Click" />
+        </StackPanel>
+
+        <TextBlock Grid.Row="1" TextWrapping="Wrap"
+                   Name="TxtblkDisplay"
+                >This is where text will be displayed</TextBlock>
+                
+    </Grid>
+</Window>

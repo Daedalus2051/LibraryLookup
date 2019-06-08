@@ -18,8 +18,7 @@
         <StackPanel Grid.Row="0" Margin="5" >
             <TextBox Name="TxtInput" Margin="5"/>
             <Button Content="Search ISBN" Margin="5"
-                    Name="BtnSearch" 
-                    Click="BtnSearch_Click" />
+                    Name="BtnSearch"  />
         </StackPanel>
 
         <TextBlock Grid.Row="1" TextWrapping="Wrap"
